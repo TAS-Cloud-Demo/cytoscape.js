@@ -2,8 +2,7 @@
 framework: mocha
 preRun:
      command:
-        - npm ci
-        - npm audit fix
+        - npm install
 preMerge:
   pattern:
     - "./test/*.js"
@@ -16,4 +15,5 @@ postRun:
      command:
         - node --version
 configFile: mocharc.yml
+nodeVersion: 14.18.3
 version: 1.0
